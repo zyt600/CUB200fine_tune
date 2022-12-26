@@ -17,4 +17,5 @@
 图形界面使用预训练好的模型处理输入图像，得出分类。为了pre时不预测出错，使用了与最终版本不同的模型，其在训练集和测试集同时训练，并放任过拟合达到了100%的准确率
 
 ## google Colab: 
-* [res152-2.ipynb](https://drive.google.com/file/d/14tuEH0OonGIIiV3ITUx8BkkbgaTa90Kh/view?usp=sharing)依次运行每个单元格。
+* [res152-2.ipynb](https://drive.google.com/file/d/14tuEH0OonGIIiV3ITUx8BkkbgaTa90Kh/view?usp=sharing)测试集准确率达82%。
+* [res152.ipynb](https://colab.research.google.com/drive/1mSjlTpqNeNTikKUWuReJaqyREokBrSbE)是一个从头开始的版本，但调参弱于第二版，准确率更低。
