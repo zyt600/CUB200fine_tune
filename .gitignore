@@ -1,0 +1,9 @@
+/CUB_200_2011/
+/smallBatch/
+*.jpg
+*.pth
+namee
+.idea/*.xml
+.idea/*.iml
+~$模型、改进顺序.pptx
+.idea/用所选项目新建的文件夹/*
