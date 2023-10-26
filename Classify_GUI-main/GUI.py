@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image, ImageTk
 import tkinter.font as tkFont
 # from predict_bird import trained_model
-from predict_bird_class import predict_bire_class
+from predict_bird_class import predict_bird_class
 import webbrowser
 
 # 类别表
@@ -33,7 +33,7 @@ def predict():
     show_img.create_image(int(root.winfo_width()*0.5),
                           0, anchor='n', image=img_file)
 
-    number = predict_bire_class(path)   # 调用模型
+    number = predict_bird_class(path)   # 调用模型
     var.set(df.iloc[number, 1])
     var1.set(df.iloc[number, 3])
     global url
@@ -57,7 +57,7 @@ show_img = Canvas(root, bg='snow')
 show_img.place(relx=0, rely=1/6, anchor='nw', relwidth=1, relheight=5/6)
 
 # 打开图片按钮
-open_img = Button(root, text='打开图片', font=open_Style, command=predict)
+open_img = Button(root, text='open image', font=open_Style, command=predict)
 open_img.place(relx=0, rely=0, anchor='nw', relwidth=1/8, relheight=1/12)
 
 # 百科链接

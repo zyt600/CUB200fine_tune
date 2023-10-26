@@ -10,7 +10,7 @@ import torch
 def predict_bird_class(imgPath="bird.jpg"):
     """预测鸟类类别函数，调用方法：输入图片的路径，返回鸟类分类的类号（0～199）"""
     # print("start")
-    md = torch.load("almighty4+3.pth",map_location="cpu").eval()
+    md = torch.load("./almighty4+3.pth",map_location="cpu").eval()
     op = Image.open(imgPath)
     op = op.resize((224, 224))
     trans = transforms.ToTensor()

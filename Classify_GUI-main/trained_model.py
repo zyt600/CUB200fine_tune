@@ -11,7 +11,7 @@ md = torch.load(
 trans = transforms.ToTensor()
 
 
-def predict_bire_class(imgPath=".\\Classify_GUI-main\\predict_bird\\Red_Winged_Blackbird_0020_4050.jpg"):
+def predict_bird_class(imgPath=".\\Classify_GUI-main\\predict_bird\\Red_Winged_Blackbird_0020_4050.jpg"):
     """预测鸟类类别函数，调用方法：输入图片的路径，返回鸟类分类的类号（0～199）"""
     # print("start")
     op = Image.open(imgPath)
@@ -29,4 +29,4 @@ def predict_bire_class(imgPath=".\\Classify_GUI-main\\predict_bird\\Red_Winged_B
     return int(out.argmax())
 
 
-predict_bire_class()
+predict_bird_class()
