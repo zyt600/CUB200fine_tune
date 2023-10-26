@@ -1,11 +1,12 @@
-## 细粒度图像分类
-细粒度图像分类问题是对大类下的子类进行识别。细粒度图像分析任务相对通用图像任务的区别和难点在于其图像所属类别的粒度更为精细。
-通用图像分类其任务诉求是将“袋鼠”和“狗”这两个物体大类分开；而细粒度图像的分类任务则要求对“狗”该类类别下细粒度的子类，即分别为“哈士奇”和“爱斯基摩犬”的图像分辨开来。不止对计算机，对普通人来说，细粒度图像任务的难度和挑战无疑也更为巨大。
+[Chinese](./README_zh.md)
 
+## Fine-Grained Image Classification
+The problem of fine-grained image classification involves recognizing subclasses within a major category. The distinction and challenge of fine-grained image analysis tasks compared to general image tasks lie in the more detailed granularity of the image categories.
 
-## CUB-200数据集
-该数据集共有11788张鸟类图像，包含200类鸟类子类，其中训练数据集有5994张图像，测试集有5794张图像，每张图像均提供了图像类标记信息，图像中鸟的bounding box，鸟的关键part信息，以及鸟类的属性信息。本代码仅使用图片，不使用额外信息。
+The demand of general image classification is to differentiate major object categories, such as separating "kangaroos" from "dogs." On the other hand, fine-grained image classification tasks require distinguishing between subcategories within a category, for example, identifying images of "Husky" and "Eskimo Dog," which are both subcategories of "dogs." The difficulty and challenges of fine-grained image tasks are undoubtedly greater, not only for computers but also for ordinary people.
 
+## CUB-200 Dataset
+This dataset contains 11,788 bird images, spanning across 200 bird subclasses. It is divided into a training set with 5,994 images and a test set with 5,794 images. Each image comes with annotations, including image class labels, bounding boxes for the birds, key part information of the birds, and attribute information of the bird species. For this code, only the images are used without any additional information.
 
-## google Colab链接: 
-* [res152-2.ipynb](https://drive.google.com/file/d/14tuEH0OonGIIiV3ITUx8BkkbgaTa90Kh/view?usp=sharing)测试集准确率达82%。
+## Google Colab Link: 
+[res152-2.ipynb](https://drive.google.com/file/d/14tuEH0OonGIIiV3ITUx8BkkbgaTa90Kh/view?usp=sharing) The test set accuracy reached 82%.
